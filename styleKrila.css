@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow:hidden;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #016F9F;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+
+.menu{
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    overflow:hidden;
+    background-color: rgba(0, 118, 154, 0.646);
+}
+
+.comienzo{
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(34, 75%, 56%, 0.573), hsla(189, 71%, 39%, 0.689)), url(./imagenes/fondo\ krila.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(34, 75%, 56%, 0.573), hsla(189, 71%, 39%, 0.689)), url(./imagenes/fondo\ krila.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    padding: 30px 15px 0;
+    transition: text-decoration .5s;
+}
+
+.menu a {
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 10px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+
+#inicio{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#inicio h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+#inicio h4{
+    
+    font-weight: 300;
+    color: #016F9F;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius:20px;
+}
+
+
+.onda{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#nosotros{
+    padding: 30px 0 60px 0;
+}
+
+.acerca-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.acerca-nosotros .texto{
+    width: 48%;
+    
+}
+
+.mariposa{
+    width: 30%;
+}
+
+.icono{
+    width: 26px;
+}
+
+.texto h3{
+    margin-bottom: 15px;
+}
+
+.texto h3 span{
+    background-color: #016F9F;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 30px; 
+}
+
+.texto p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 22px;
+}
+
+/*Experiencia*/
+.cuadro{
+    width: 220px;
+    height: 250px;
+}
+
+.cuadro p{
+    width: auto;
+    font-size: 18px;
+} 
+
+#empresa{
+    background-color: #f2f2f2;
+}
+
+.titulo-experiencia{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: rgb(234, 125, 0);
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fotos{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.fotos > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icono-experiencia{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: hsla(0, 0%, 100%, 0.648);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icono-experiencia img{
+    width: 50px;
+}
+
+.icono-experiencia p{
+    color:#025a80;
+}
+
+.fotos:hover .icono-experiencia{
+    transform: scale(1);
+}
+
+/*enfoque*/
+
+#enfoque{
+    margin-block: 15%;
+}
+
+.titulo-enfoque{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    color:#319dae;
+    
+}
+
+.mision-vision{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mision-vision .etiqueta{
+    background-color: #319dae;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.mision-vision .etiqueta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.mision-vision .etiqueta > .texto-etiqueta{
+    width: 60%;
+    color: white;
+}
+
+.mision-vision .etiqueta > .texto-etiqueta p {
+    font-weight: 300;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+/*acompañamiento*/
+
+#acompañamiento{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.informacion-servicio{
+    width: 28%;
+    text-align: center;
+}
+
+.informacion-servicio img{
+    width: 90%;
+}
+
+.informacion-servicio h3{
+    margin: 10px 0;
+}
+
+.informacion-servicio ol{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Final*/
+
+footer{
+    background-color: #008C9F ;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+#contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto-contacto{
+    text-align: center;
+}
+
+.texto-contacto h4{
+    color: #fff;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.texto-contacto a{
+    color: #ccc;
+}
+
+.final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+/*boton*/
+
+.boton{
+    text-align: left;
+    margin: auto;
+}
+
+.en{
+    color: black;
+}
+
+.es{
+    color:white;
+}
+
+.check{
+    position:relative;
+    width:50px;
+}
+
+.check:before{
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: gray;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 25px;
+    transition: 0.5s;
+    border:2px solid gray;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left:25px;
+    border:2px solid #005661;
+
+}
+
+.check:checked:before{
+   background: #005661;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .acerca-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #inicio .contenido-textos{
+        width: 90%;
+    }
+
+    .mariposa{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .fotos{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .mision-vision{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mision-vision .etiqueta{
+        width: 90%;
+    }
+
+    .mision-vision .etiqueta:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .informacion-servicio{
+        width: 100%;
+        text-align: center;
+    }
+
+    .informacion-servicio:nth-child(1), .informacion-servicio:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .informacion-servicio img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    #inicio h1{
+        font-size: 35px;
+    }
+
+    #inicio h4{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .mariposa{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .acerca-nosotros .texto{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .fotos{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .mision-vision .etiqueta{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision-vision .etiqueta img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    #contacto{
+        flex-direction: column;
+        border: none;
+    }
+
+    .texto-contacto{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .texto-contacto h4{
+        border: none;
+    }
+
+    .texto-contacto a{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .final{
+        font-size: 20px;
+    }
+}
